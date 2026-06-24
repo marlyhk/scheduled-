@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scheduled</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="splash" class="splash">
+    <img src="assets/scheduled-splash.jpeg" alt="Scheduled" onerror="this.style.display='none'">
+    <h1>scheduled</h1>
+    <p>TUTORING, MADE SIMPLE</p>
+  </div>
+
+  <main id="app" class="app hidden">
+    <section id="loginPage" class="login-card">
+      <div class="brand">
+        <img src="assets/scheduled-icon.jpeg" alt="Scheduled" onerror="this.style.display='none'">
+        <h1>scheduled</h1>
+        <p>Tutoring, made simple.</p>
+      </div>
+      <label>Username</label>
+      <input id="username" placeholder="Enter username" />
+      <label>Password</label>
+      <input id="password" type="password" placeholder="Enter password" />
+      <button onclick="login()">Login</button>
+      <p class="hint">Demo logins: <b>admin/admin123</b>, <b>marly/tutor123</b>, <b>student/student123</b>, <b>group/group123</b></p>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <header class="topbar">
+        <div>
+          <h1>Scheduled</h1>
+          <p id="roleLabel"></p>
+        </div>
+        <button class="ghost" onclick="logout()">Logout</button>
+      </header>
+
+      <nav id="tabs" class="tabs"></nav>
+      <section id="content" class="content"></section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

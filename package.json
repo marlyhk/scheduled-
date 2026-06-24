@@ -1,0 +1,12 @@
+{
+  "name": "scheduled",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Static site ready'"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
